@@ -7,7 +7,9 @@ dateutils==0.6.6
 numpy==1.14.3
 remotecv==2.2.2
 opencv-engine==1.0.1
-thumbor==6.7.5
+# Replace thumbor with ic's fork. Note our upstream only has 6.7.1
+git+https://github.com/ixc/thumbor.git@f53a4ab72b3bf176fcf2db60a91aefbca021aff4#egg=thumbor
+# thumbor==6.7.5
 tornado-botocore==1.5.0
 tc-aws==6.2.15
 tc-core==0.4.1
