@@ -304,6 +304,14 @@ HTTP_LOADER_FORWARD_USER_AGENT = {{ HTTP_LOADER_FORWARD_USER_AGENT | default(Fal
 ## Defaults to: []
 HTTP_LOADER_FORWARD_HEADERS_WHITELIST = {{ HTTP_LOADER_FORWARD_HEADERS_WHITELIST | default([]) }}
 
+## Whether thumbor should forward client querystrings
+## Defaults to: False
+HTTP_LOADER_FORWARD_QUERYSTRING = {{ HTTP_LOADER_FORWARD_QUERYSTRING | default(False) }}
+
+## A list of querystrings the http header will forward from the client
+## Defaults to: []
+HTTP_LOADER_FORWARD_QUERYSTRING_WHITELIST = {{ HTTP_LOADER_FORWARD_QUERYSTRING_WHITELIST  | default([]) }}
+
 ## Default user agent for thumbor http loader requests
 ## Defaults to: Thumbor/6.3.0
 HTTP_LOADER_DEFAULT_USER_AGENT = '{{ HTTP_LOADER_DEFAULT_USER_AGENT | default('Thumbor/6.3.0') }}'
